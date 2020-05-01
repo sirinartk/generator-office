@@ -4,10 +4,14 @@
   "author": "",
   "version": "0.1.0",
   "scripts": {
-    "validate": "office-toolbox validate -m manifest.xml"
+    "validate": "office-toolbox validate -m manifest.xml",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "office-toolbox": "^0.1.1"
+    "office-toolbox": "^0.1.1",
+    "snyk": "^1.316.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
