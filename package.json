@@ -13,7 +13,9 @@
     "tsc-watch": "tsc -p tsconfig.json -w",
     "start": "rimraf generators && concurrently \"npm run tsc-watch\" \"npm run copy-watch\"",
     "build": "rimraf generators && concurrently \"npm run tsc\" \"npm run copy\"",
-    "test": "mocha --timeout 0 -r ts-node/register generators/test/**.js"
+    "test": "mocha --timeout 0 -r ts-node/register generators/test/**.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": ">6.9.0"
@@ -48,7 +50,8 @@
     "unzipper": "^0.10.4",
     "uuid": "^3.3.3",
     "yeoman-generator": "^1.1.1",
-    "yosay": "^2.0.2"
+    "yosay": "^2.0.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
@@ -64,5 +67,6 @@
     "typescript": "^3.6.2",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^1.9.1"
-  }
+  },
+  "snyk": true
 }
