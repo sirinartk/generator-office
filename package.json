@@ -43,11 +43,11 @@
     "office-addin-manifest": "^1.4.12",
     "office-addin-usage-data": "^1.0.3",
     "opn": "^6.0.0",
-    "request": "^2.88.0",
-    "rimraf": "^3.0.0",
-    "unzipper": "^0.10.4",
+    "request": "^2.88.2",
+    "rimraf": "^4.3.1",
+    "unzipper": "^0.12.1",
     "uuid": "^3.3.3",
-    "yeoman-generator": "^1.1.1",
+    "yeoman-generator": "^6.0.0",
     "yosay": "^2.0.2"
   },
   "devDependencies": {
